@@ -6,20 +6,18 @@
     <title>Calculatrice</title>
 </head>
 <body>
-    <button id="chfr">0</button>
-    <button id="chfr">1</button>
-    <button id="chfr">3</button>
-    <button id="chfr">4</button>
-    <button id="chfr">5</button>
-    <button id="chfr">6</button>
-    <button id="chfr">7</button>
-    <button id="chfr">8</button>
-    <button id="chfr">9</button>
-    <button id="plus">+</button>
-    <button id="moins">-</button>
-    <button id="fois">*</button>
-    <button id="division">/</button>
-    <button id="clear">mamafa</button>
+    <label for="premier">entrer le premier chiffre</label>
+    <input type="text" id="id1" name="premier"><br>
+    +<input type="radio" name="r" id="addition" value="+" >
+    -<input type="radio" name="r" id="soustraction" value="-">
+    *<input type="radio" name="r" id="multiplication" value="*">
+    /<input type="radio" name="r" id="division" value="/"><br>
+    <label for="radio">entrer le second chiffre</label>
+    <input type="text" id="id2" name="second"><br>
+    <input type="submit"  onclick="calculer()" value="calculer"><br>
    
+   
+    <p id="affichage"></p> 
+   <script src="main.js"></script>
 </body>
 </html>
